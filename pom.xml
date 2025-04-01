@@ -11,7 +11,8 @@
   <properties>
     <jetty.version>6.1.25</jetty.version>
     <wicket.version>1.5.14-dns</wicket.version>
-    <spring.version>3.2.13.RELEASE</spring.version>
+    <spring.version>6.1.14</spring.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
 
@@ -26,8 +27,20 @@
       <dependency>
         <groupId>be.dnsbelgium</groupId>
         <artifactId>rdap-server</artifactId>
-        <version>1.0.3</version>
+        <version>4.0.0</version>
       </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>6.1.14</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+      <version>6.1.14</version>
+    </dependency>
 
     <dependency>
       <groupId>org.springframework</groupId>
@@ -103,8 +116,8 @@
       <version>3.1</version>
       <inherited>true</inherited>
       <configuration>
-        <source>1.7</source>
-        <target>1.7</target>
+        <source>8</source>
+        <target>8</target>
         <compilerVersion>1.7</compilerVersion>
       </configuration>
     </plugin>

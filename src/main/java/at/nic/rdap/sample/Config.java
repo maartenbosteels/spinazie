@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Configuration;
 public class Config extends WebConfig {
 
     @Bean
-    @Override
     public DomainService getDomainService() {
         return new MyDomainService();
     }

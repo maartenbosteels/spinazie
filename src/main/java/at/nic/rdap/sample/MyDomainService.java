@@ -80,8 +80,7 @@ public class MyDomainService extends DefaultDomainService {
     title.add("Title part 1");
     title.add("Title part 2");
     List<Link> links = new ArrayList<Link>();
-    links.add(new Link(new URI("http://example.com/value"), "rel", new URI("http://example.com/href"), hrefLang, title, "Media", "Type"));
-    //links.add(new Link(new URI("http://example.com/value"), "rel", new URI("http://example.com/href"), hrefLang, title, "Media", "Type"));
+    links.add(new Link(new URI("http://example.com/value"), "rel", new URI("http://example.com/href"), hrefLang, "title", "Media", "Type") );
     return links;
   }
 
@@ -225,8 +224,9 @@ public class MyDomainService extends DefaultDomainService {
             .addEmailAddress("john.f.kennedy@whitehouse.gov")
             .setFormattedName("JFK")
             .build();
-    Entity registrant = new Entity(null, null, null, "en", Entity.OBJECT_CLASS_NAME, null, null, null, "REGISTRANT", vCard, someRoles(), null, null);
-    entityList.add(registrant);
+    //Entity registrant = new Entity(null, null, null, "en", Entity.OBJECT_CLASS_NAME, null, null, null, "REGISTRANT", vCard, someRoles(), null, null);
+    //Entity registrant = new Entity();
+    //entityList.add(registrant);
     return entityList;
   }
 
