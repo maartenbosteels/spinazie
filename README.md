@@ -1,2 +1,3 @@
 # spinazie
-quick-and-dirty dummy RDAP server
+
+Nothing to see here folks.
